@@ -12,7 +12,7 @@ namespace Healy_API.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseOracle("Data Source=oracle.fiap.com.br:1521/orcl;User ID=rm99708;Password=180105");
+            optionsBuilder.UseOracle("Data Source=oracle.fiap.com.br:1521/orcl;User ID=username;Password=password");
         }
     }
 }
